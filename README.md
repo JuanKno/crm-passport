@@ -7,42 +7,51 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About Laravel
+## Sobre el proyecto
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Este proyecto esta configurado con un sistema de autenticación basado en token el cual utiliza laravel passport para gestionar a traves de JWT los siguientes modulos:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+-   Usuarios
+-   Clientes
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Para instalar el proyecto en un entorno local siga esta guia de instalación paso a paso.
 
-## Learning Laravel
+## Guia de instalación
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+```
+git clone https://github.com/JuanKno/crm-passport.git
+```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+-   En la raiz del proyecto ejecute
 
-## Laravel Sponsors
+    ```
+    composer install
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+    ```
 
-### Premium Partners
+    -   Asegurese de ejecutar las migraciones
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
+    ```
+    php artisan migrate --seed
+
+    ```
+
+    -   luego instale los recursos necesarios para que passport funcione adecuadamente
+
+    ```
+    php artisan passport:install
+
+    ```
+
+    -   Ejecute el proyecto en un entorno local
+
+    ```
+    php artisan serve
+
+    ```
+
+    -   por último asegurese de tener una herramienta con la cual hacer las peticiones a la API
+    -   [postman](https://www.postman.com/downloads/)
 
 ## Contributing
 
