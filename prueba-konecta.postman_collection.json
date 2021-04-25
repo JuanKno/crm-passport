@@ -1,0 +1,820 @@
+{
+	"info": {
+		"_postman_id": "a4d2c1b9-3518-4c16-8849-eddb7d4f93b4",
+		"name": "prueba-konecta",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Requested-With",
+								"type": "text",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTY0ZDhmNzM0N2Q2NzYwYTQ4MzE0ZmM5ZDMyOGQ3YWFmNDY4YjdmOTk2NzM1MGMxY2E4YmU0Y2M2Nzk1YTJkYWY2MmUwZDkxZDcxMzk3ZTYiLCJpYXQiOjE2MTkzNzA4MDYsIm5iZiI6MTYxOTM3MDgwNiwiZXhwIjoxNjUwOTA2ODA2LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.GruUstJLphylhZlL7UvSgvcYWcNqYPxOYxzfJ50_LLWci17JH851R5R6ZJNm7txzliy8qFG4mzM8xmO6m8eFT_H5YtONn9PxLbbo_yynBGSvX27Vu3i23SXcytjJwDlsOCn44IPZOn01G8J0FNhAzsre5GPp4vUqzn4GErXZy-Ch5-OScAfIA59ePhO9OEFrY_n74AHzopMLDYXLvdpir28W1NvrN_NRWSkFwMBkmoX1UQpMEhCC9y-JxH_bYTtzaNxi78hPT44chJni95FaU6CUNR6Y5ljBtd9QsDv5O-AK0WibMLHT1SdD0YXvGE-gxrVLqE_-dT50FN9Dz2_dNzYgdR3ZmWyOzIAkwgsB5GyGYXkJE2dtslgTsEDkRPKUubtMd4f2CUekLSaFuLdhmvZQHC6J-z7W75IH5gosZsyiV0iAP8y2NtWNhQ9M87xMPmGDEwOAhodZxHC6Jqpuk50lWI5-KOViibxUclE6EGhMUjlDROxonTUSd13ZXrIXPJ3ln9e095PsxK0DMJoEzCYNH3xQru3A4vDvorTEjF1nknOF_rVd7aR5GrSU35piQsu4ssOmn1cdcJtwC_VLQCJ5jH1uW3YTeQwY2ipy-0njlJu45Ova4_DKzRhEyhlkmRVBoz25ZfcU4oBsyDwb9OaXsxgun6v-fNxFEJvNL9U",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Requested-With",
+								"type": "text",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiM2I4YmI4YjI1YWE3OTdhNDBiMTY1OTVlM2UyZWFjY2EzMzkyZDllMDZhODMxOGI1YmZjY2E1NjY1Y2IzMzc1ZTA5YTUzNDMzZGY4ZTNjODEiLCJpYXQiOjE2MTkzNjczOTgsIm5iZiI6MTYxOTM2NzM5OCwiZXhwIjoxNjUwOTAzMzk4LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.eA9FA0vRrMYEyzC61yzVugpLbV_vwvI3uXLLPCv0XWEfOR_ZzSEb9YdjmqEATAf8PNIYXuWbQVW-R9T4qxw95GPkXrx52enn9f2WPGN9rJqrgKAv1u_R535E59aRL9GwX-YpDYK-HACKeMK1gspqG0zSfcKZRNyBl7F20K3k38Op2xriELFNgYn7a3NkdpWfi4QycEZSiQSCQb-Zc9u5Zl_vcX_uFf8CaPRWQYJVxiZkqZmyn4lttY3Xtr8kwuW_XNLHcvBp30pOkKTPLq6WYhz_dXJdgXFBIjgbqwqrTvoJNvEXrCBuNnR0twWAvAoey4ltRX7HXtRp-k98uN_zuQAYaR4wiOtn1gX8tOZ1T8XuFRM0lLICI8lIWWRuGyb40BVga0xlSWVz7EJXgDivtQ3pFc6I-cReN6ZDRDuXjtdz6HKKCwDGoK99j0-h5OZIQlvoGwMLXfT859MfJx0VwJmTVVsBXRmEim7zB_2GGJytrjWtF3NF_Vl2r5kXJDcmal_YWjSgbf9Nlo1PVDgV7sul5oIp8FS2UcBGXjJMb_us-0LzLl98uveNvgRRWikRCFCx1tOf-gJ_XDjRuKTUVHCxABVx8u_GcJ2DrmGmq7LP4m7Dnus-UbRNnbP2oryEf_-V9ujFYDp2sjux-4qv7wiVnm0Trmgv_9d6jHFs44w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/user/8",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"user",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Requested-With",
+								"type": "text",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTY4NzM4NGQzODQ2NzU5MWFlZGY4OTZjZjExNTMwMDM3MTM2Y2ZiMTcyMGZlOTdjOTljZDA3ZWMwMzI0Y2Q1YmI4MjA5OWU1YTE2ZGRhN2IiLCJpYXQiOjE2MTkzNjE0MTcsIm5iZiI6MTYxOTM2MTQxNywiZXhwIjoxNjUwODk3NDE3LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.aT1PWMo1iPjhXGfpkbpzBUPPq11tl2n84RtR7Edt8KYL5HtbR7u6xW7OwETDNzFUbiJtj3XnEcfPm1bNejs8Ad0BGZnlenW4Mh3vYcJsiTJnwvspoC_2ZeDmLZbrf3Hojiy0_nOvDAx5iYGTqX2NV0R00Kf11aH0g3Zq1BS0jPMKxKLeLiHur82Jmremi6A05fJ5Azp3crG2peEvEoJVL3PfX5P8FuMsRET2ejAj7EF_XDhj11u7dbSMbfXs26MIWWTgFLslqm0dmztkQi_L_KSrfPWz3DeMab2lEtcqBashZx_iH1ZZCbH0MOvm1g9S0wPOPG94WU4bCCYO92Karcn9XPIHWgnXqESO9NgFsQI5UBdt33kXURSyZhh9x9xB_1nJjtXbZrcyKCnLWKHH38QaR5kR_pAXJkta_plfBeIBZFNnABAEB0l1YBxKszFkzNiyMSGpSp2IQUUTRDpI9_xM1udyJyahHLBErGsrEYccUkunceyRb2V28zQVXcEBSp7TUX9WXuEpsfm7KhJARlE6LGc5cA0JgUOrcq2PLvGsyjThsA5_JRh8FX2adUS39lQXaXd3Lq11Ki35OLdogtk50HMNhVuGg9EcB18WXKUUiEeolZHR7sNCL1zuH-3-O-s4lbVsUV-xcEOY7aYACUVMcyS-ay3DkZ4FzrdBLSc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/user/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"user",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Requested-With",
+								"type": "text",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiM2I4YmI4YjI1YWE3OTdhNDBiMTY1OTVlM2UyZWFjY2EzMzkyZDllMDZhODMxOGI1YmZjY2E1NjY1Y2IzMzc1ZTA5YTUzNDMzZGY4ZTNjODEiLCJpYXQiOjE2MTkzNjczOTgsIm5iZiI6MTYxOTM2NzM5OCwiZXhwIjoxNjUwOTAzMzk4LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.eA9FA0vRrMYEyzC61yzVugpLbV_vwvI3uXLLPCv0XWEfOR_ZzSEb9YdjmqEATAf8PNIYXuWbQVW-R9T4qxw95GPkXrx52enn9f2WPGN9rJqrgKAv1u_R535E59aRL9GwX-YpDYK-HACKeMK1gspqG0zSfcKZRNyBl7F20K3k38Op2xriELFNgYn7a3NkdpWfi4QycEZSiQSCQb-Zc9u5Zl_vcX_uFf8CaPRWQYJVxiZkqZmyn4lttY3Xtr8kwuW_XNLHcvBp30pOkKTPLq6WYhz_dXJdgXFBIjgbqwqrTvoJNvEXrCBuNnR0twWAvAoey4ltRX7HXtRp-k98uN_zuQAYaR4wiOtn1gX8tOZ1T8XuFRM0lLICI8lIWWRuGyb40BVga0xlSWVz7EJXgDivtQ3pFc6I-cReN6ZDRDuXjtdz6HKKCwDGoK99j0-h5OZIQlvoGwMLXfT859MfJx0VwJmTVVsBXRmEim7zB_2GGJytrjWtF3NF_Vl2r5kXJDcmal_YWjSgbf9Nlo1PVDgV7sul5oIp8FS2UcBGXjJMb_us-0LzLl98uveNvgRRWikRCFCx1tOf-gJ_XDjRuKTUVHCxABVx8u_GcJ2DrmGmq7LP4m7Dnus-UbRNnbP2oryEf_-V9ujFYDp2sjux-4qv7wiVnm0Trmgv_9d6jHFs44w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "sara",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "sara@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "seller",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "secret",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/user",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Requested-With",
+								"type": "text",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiM2I4YmI4YjI1YWE3OTdhNDBiMTY1OTVlM2UyZWFjY2EzMzkyZDllMDZhODMxOGI1YmZjY2E1NjY1Y2IzMzc1ZTA5YTUzNDMzZGY4ZTNjODEiLCJpYXQiOjE2MTkzNjczOTgsIm5iZiI6MTYxOTM2NzM5OCwiZXhwIjoxNjUwOTAzMzk4LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.eA9FA0vRrMYEyzC61yzVugpLbV_vwvI3uXLLPCv0XWEfOR_ZzSEb9YdjmqEATAf8PNIYXuWbQVW-R9T4qxw95GPkXrx52enn9f2WPGN9rJqrgKAv1u_R535E59aRL9GwX-YpDYK-HACKeMK1gspqG0zSfcKZRNyBl7F20K3k38Op2xriELFNgYn7a3NkdpWfi4QycEZSiQSCQb-Zc9u5Zl_vcX_uFf8CaPRWQYJVxiZkqZmyn4lttY3Xtr8kwuW_XNLHcvBp30pOkKTPLq6WYhz_dXJdgXFBIjgbqwqrTvoJNvEXrCBuNnR0twWAvAoey4ltRX7HXtRp-k98uN_zuQAYaR4wiOtn1gX8tOZ1T8XuFRM0lLICI8lIWWRuGyb40BVga0xlSWVz7EJXgDivtQ3pFc6I-cReN6ZDRDuXjtdz6HKKCwDGoK99j0-h5OZIQlvoGwMLXfT859MfJx0VwJmTVVsBXRmEim7zB_2GGJytrjWtF3NF_Vl2r5kXJDcmal_YWjSgbf9Nlo1PVDgV7sul5oIp8FS2UcBGXjJMb_us-0LzLl98uveNvgRRWikRCFCx1tOf-gJ_XDjRuKTUVHCxABVx8u_GcJ2DrmGmq7LP4m7Dnus-UbRNnbP2oryEf_-V9ujFYDp2sjux-4qv7wiVnm0Trmgv_9d6jHFs44w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Sara Manco",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "sara@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "seller",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/user/8",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"user",
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "seller@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "secret",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Requested-With",
+								"type": "text",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiM2I4YmI4YjI1YWE3OTdhNDBiMTY1OTVlM2UyZWFjY2EzMzkyZDllMDZhODMxOGI1YmZjY2E1NjY1Y2IzMzc1ZTA5YTUzNDMzZGY4ZTNjODEiLCJpYXQiOjE2MTkzNjczOTgsIm5iZiI6MTYxOTM2NzM5OCwiZXhwIjoxNjUwOTAzMzk4LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.eA9FA0vRrMYEyzC61yzVugpLbV_vwvI3uXLLPCv0XWEfOR_ZzSEb9YdjmqEATAf8PNIYXuWbQVW-R9T4qxw95GPkXrx52enn9f2WPGN9rJqrgKAv1u_R535E59aRL9GwX-YpDYK-HACKeMK1gspqG0zSfcKZRNyBl7F20K3k38Op2xriELFNgYn7a3NkdpWfi4QycEZSiQSCQb-Zc9u5Zl_vcX_uFf8CaPRWQYJVxiZkqZmyn4lttY3Xtr8kwuW_XNLHcvBp30pOkKTPLq6WYhz_dXJdgXFBIjgbqwqrTvoJNvEXrCBuNnR0twWAvAoey4ltRX7HXtRp-k98uN_zuQAYaR4wiOtn1gX8tOZ1T8XuFRM0lLICI8lIWWRuGyb40BVga0xlSWVz7EJXgDivtQ3pFc6I-cReN6ZDRDuXjtdz6HKKCwDGoK99j0-h5OZIQlvoGwMLXfT859MfJx0VwJmTVVsBXRmEim7zB_2GGJytrjWtF3NF_Vl2r5kXJDcmal_YWjSgbf9Nlo1PVDgV7sul5oIp8FS2UcBGXjJMb_us-0LzLl98uveNvgRRWikRCFCx1tOf-gJ_XDjRuKTUVHCxABVx8u_GcJ2DrmGmq7LP4m7Dnus-UbRNnbP2oryEf_-V9ujFYDp2sjux-4qv7wiVnm0Trmgv_9d6jHFs44w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/profile",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Requested-With",
+								"type": "text",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjVjNGJiMjI0ZjZlNDcxYmU5OTdhOGIyMjczZWNmY2IxMTA4MWEyYWMxZTVlYjI5OTQ5OWM1YTVjOTUwYzYxZGU1YWY1YmM4NDVhYzJkYTMiLCJpYXQiOjE2MTkzNzA3MjEsIm5iZiI6MTYxOTM3MDcyMSwiZXhwIjoxNjUwOTA2NzIxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.q3e6r_3JUdlEWBvAOdAr9vffdAwdZMJiDxxw8A2aAzSHL3h9Llww04hCUN9Iw0pVPePEWyJoKExiT7mJDVeSMyZ3x4dNSVWO83aNCMehX_VcX16n_xrpoKGT_9T23-onaLxlsWgzLf21nbwHmr6YmDlyPRqUEFDBR2ZIUoYcM-MOHODEyCwwORU9oyvV0xEic6wvolNPlegBYlMu_sMAQq_-XkV49dY_Mz2FsRZkhxshrVg0P0S8qKLP4inrguMZKbxhNZdzpMutLj7KCCezXIW5d3RKuxe1bhvzNkU0VlAERFgjsgQfMejnDW3j2yZmWa7XadJu64L78a2aNfHIKhEnBT1egQHui032IZRiEkhPHX31RfxVInvfvaLmY0xTArf9KLQklTQ1HR6REHH5QkjA33ZyLFQkLJyjWeAqb0swPssKV9Ap_2-HnQn6RLhOT_ZqeG0dTDXT2CEfHMWJVi4z8tmW-jfzZJS3t0Sd6GFWYajnFinJdT24xsSjvQ_T_fxPtm7okipU7EUw0uyMw_azFNl-F4g1a_pxANog4jOKCXHUu1FrGryYpkuIcTA30eu6ARRA3mDgCnsYhwkvN0zcwAAN5Ui7WLcAJOFTu2s47M0jyb8RrN31O5HHpLHxUS65vSAa85bOXd0Ou0w51qssbYes5dtipMXAImcxQoE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/logout",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Requested-With",
+								"type": "text",
+								"value": "XMLHttpRequest"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "jhon@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "secret",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Jhon Doe",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/signup",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "create customer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Requested-With",
+								"type": "text",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiM2I4YmI4YjI1YWE3OTdhNDBiMTY1OTVlM2UyZWFjY2EzMzkyZDllMDZhODMxOGI1YmZjY2E1NjY1Y2IzMzc1ZTA5YTUzNDMzZGY4ZTNjODEiLCJpYXQiOjE2MTkzNjczOTgsIm5iZiI6MTYxOTM2NzM5OCwiZXhwIjoxNjUwOTAzMzk4LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.eA9FA0vRrMYEyzC61yzVugpLbV_vwvI3uXLLPCv0XWEfOR_ZzSEb9YdjmqEATAf8PNIYXuWbQVW-R9T4qxw95GPkXrx52enn9f2WPGN9rJqrgKAv1u_R535E59aRL9GwX-YpDYK-HACKeMK1gspqG0zSfcKZRNyBl7F20K3k38Op2xriELFNgYn7a3NkdpWfi4QycEZSiQSCQb-Zc9u5Zl_vcX_uFf8CaPRWQYJVxiZkqZmyn4lttY3Xtr8kwuW_XNLHcvBp30pOkKTPLq6WYhz_dXJdgXFBIjgbqwqrTvoJNvEXrCBuNnR0twWAvAoey4ltRX7HXtRp-k98uN_zuQAYaR4wiOtn1gX8tOZ1T8XuFRM0lLICI8lIWWRuGyb40BVga0xlSWVz7EJXgDivtQ3pFc6I-cReN6ZDRDuXjtdz6HKKCwDGoK99j0-h5OZIQlvoGwMLXfT859MfJx0VwJmTVVsBXRmEim7zB_2GGJytrjWtF3NF_Vl2r5kXJDcmal_YWjSgbf9Nlo1PVDgV7sul5oIp8FS2UcBGXjJMb_us-0LzLl98uveNvgRRWikRCFCx1tOf-gJ_XDjRuKTUVHCxABVx8u_GcJ2DrmGmq7LP4m7Dnus-UbRNnbP2oryEf_-V9ujFYDp2sjux-4qv7wiVnm0Trmgv_9d6jHFs44w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Alberto",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "sara@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "document",
+									"value": "1255522",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "secret street 1235 - 458",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/customer",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update customer",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Requested-With",
+								"type": "text",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiM2I4YmI4YjI1YWE3OTdhNDBiMTY1OTVlM2UyZWFjY2EzMzkyZDllMDZhODMxOGI1YmZjY2E1NjY1Y2IzMzc1ZTA5YTUzNDMzZGY4ZTNjODEiLCJpYXQiOjE2MTkzNjczOTgsIm5iZiI6MTYxOTM2NzM5OCwiZXhwIjoxNjUwOTAzMzk4LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.eA9FA0vRrMYEyzC61yzVugpLbV_vwvI3uXLLPCv0XWEfOR_ZzSEb9YdjmqEATAf8PNIYXuWbQVW-R9T4qxw95GPkXrx52enn9f2WPGN9rJqrgKAv1u_R535E59aRL9GwX-YpDYK-HACKeMK1gspqG0zSfcKZRNyBl7F20K3k38Op2xriELFNgYn7a3NkdpWfi4QycEZSiQSCQb-Zc9u5Zl_vcX_uFf8CaPRWQYJVxiZkqZmyn4lttY3Xtr8kwuW_XNLHcvBp30pOkKTPLq6WYhz_dXJdgXFBIjgbqwqrTvoJNvEXrCBuNnR0twWAvAoey4ltRX7HXtRp-k98uN_zuQAYaR4wiOtn1gX8tOZ1T8XuFRM0lLICI8lIWWRuGyb40BVga0xlSWVz7EJXgDivtQ3pFc6I-cReN6ZDRDuXjtdz6HKKCwDGoK99j0-h5OZIQlvoGwMLXfT859MfJx0VwJmTVVsBXRmEim7zB_2GGJytrjWtF3NF_Vl2r5kXJDcmal_YWjSgbf9Nlo1PVDgV7sul5oIp8FS2UcBGXjJMb_us-0LzLl98uveNvgRRWikRCFCx1tOf-gJ_XDjRuKTUVHCxABVx8u_GcJ2DrmGmq7LP4m7Dnus-UbRNnbP2oryEf_-V9ujFYDp2sjux-4qv7wiVnm0Trmgv_9d6jHFs44w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Sara white",
+									"type": "text"
+								},
+								{
+									"key": "document",
+									"value": "1255522",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "sara@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "secret street 1235 - 458",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/customer/6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"customer",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Requested-With",
+								"type": "text",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiM2I4YmI4YjI1YWE3OTdhNDBiMTY1OTVlM2UyZWFjY2EzMzkyZDllMDZhODMxOGI1YmZjY2E1NjY1Y2IzMzc1ZTA5YTUzNDMzZGY4ZTNjODEiLCJpYXQiOjE2MTkzNjczOTgsIm5iZiI6MTYxOTM2NzM5OCwiZXhwIjoxNjUwOTAzMzk4LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.eA9FA0vRrMYEyzC61yzVugpLbV_vwvI3uXLLPCv0XWEfOR_ZzSEb9YdjmqEATAf8PNIYXuWbQVW-R9T4qxw95GPkXrx52enn9f2WPGN9rJqrgKAv1u_R535E59aRL9GwX-YpDYK-HACKeMK1gspqG0zSfcKZRNyBl7F20K3k38Op2xriELFNgYn7a3NkdpWfi4QycEZSiQSCQb-Zc9u5Zl_vcX_uFf8CaPRWQYJVxiZkqZmyn4lttY3Xtr8kwuW_XNLHcvBp30pOkKTPLq6WYhz_dXJdgXFBIjgbqwqrTvoJNvEXrCBuNnR0twWAvAoey4ltRX7HXtRp-k98uN_zuQAYaR4wiOtn1gX8tOZ1T8XuFRM0lLICI8lIWWRuGyb40BVga0xlSWVz7EJXgDivtQ3pFc6I-cReN6ZDRDuXjtdz6HKKCwDGoK99j0-h5OZIQlvoGwMLXfT859MfJx0VwJmTVVsBXRmEim7zB_2GGJytrjWtF3NF_Vl2r5kXJDcmal_YWjSgbf9Nlo1PVDgV7sul5oIp8FS2UcBGXjJMb_us-0LzLl98uveNvgRRWikRCFCx1tOf-gJ_XDjRuKTUVHCxABVx8u_GcJ2DrmGmq7LP4m7Dnus-UbRNnbP2oryEf_-V9ujFYDp2sjux-4qv7wiVnm0Trmgv_9d6jHFs44w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Sara white",
+									"type": "text"
+								},
+								{
+									"key": "document",
+									"value": "1255522",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "sara@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "secret street 1235 - 458",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/customers",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete customer",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Requested-With",
+								"type": "text",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiM2I4YmI4YjI1YWE3OTdhNDBiMTY1OTVlM2UyZWFjY2EzMzkyZDllMDZhODMxOGI1YmZjY2E1NjY1Y2IzMzc1ZTA5YTUzNDMzZGY4ZTNjODEiLCJpYXQiOjE2MTkzNjczOTgsIm5iZiI6MTYxOTM2NzM5OCwiZXhwIjoxNjUwOTAzMzk4LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.eA9FA0vRrMYEyzC61yzVugpLbV_vwvI3uXLLPCv0XWEfOR_ZzSEb9YdjmqEATAf8PNIYXuWbQVW-R9T4qxw95GPkXrx52enn9f2WPGN9rJqrgKAv1u_R535E59aRL9GwX-YpDYK-HACKeMK1gspqG0zSfcKZRNyBl7F20K3k38Op2xriELFNgYn7a3NkdpWfi4QycEZSiQSCQb-Zc9u5Zl_vcX_uFf8CaPRWQYJVxiZkqZmyn4lttY3Xtr8kwuW_XNLHcvBp30pOkKTPLq6WYhz_dXJdgXFBIjgbqwqrTvoJNvEXrCBuNnR0twWAvAoey4ltRX7HXtRp-k98uN_zuQAYaR4wiOtn1gX8tOZ1T8XuFRM0lLICI8lIWWRuGyb40BVga0xlSWVz7EJXgDivtQ3pFc6I-cReN6ZDRDuXjtdz6HKKCwDGoK99j0-h5OZIQlvoGwMLXfT859MfJx0VwJmTVVsBXRmEim7zB_2GGJytrjWtF3NF_Vl2r5kXJDcmal_YWjSgbf9Nlo1PVDgV7sul5oIp8FS2UcBGXjJMb_us-0LzLl98uveNvgRRWikRCFCx1tOf-gJ_XDjRuKTUVHCxABVx8u_GcJ2DrmGmq7LP4m7Dnus-UbRNnbP2oryEf_-V9ujFYDp2sjux-4qv7wiVnm0Trmgv_9d6jHFs44w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Sara white",
+									"type": "text"
+								},
+								{
+									"key": "document",
+									"value": "1255522",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "sara@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "secret street 1235 - 458",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/customer/6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"customer",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search customer",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Requested-With",
+								"type": "text",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiM2I4YmI4YjI1YWE3OTdhNDBiMTY1OTVlM2UyZWFjY2EzMzkyZDllMDZhODMxOGI1YmZjY2E1NjY1Y2IzMzc1ZTA5YTUzNDMzZGY4ZTNjODEiLCJpYXQiOjE2MTkzNjczOTgsIm5iZiI6MTYxOTM2NzM5OCwiZXhwIjoxNjUwOTAzMzk4LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.eA9FA0vRrMYEyzC61yzVugpLbV_vwvI3uXLLPCv0XWEfOR_ZzSEb9YdjmqEATAf8PNIYXuWbQVW-R9T4qxw95GPkXrx52enn9f2WPGN9rJqrgKAv1u_R535E59aRL9GwX-YpDYK-HACKeMK1gspqG0zSfcKZRNyBl7F20K3k38Op2xriELFNgYn7a3NkdpWfi4QycEZSiQSCQb-Zc9u5Zl_vcX_uFf8CaPRWQYJVxiZkqZmyn4lttY3Xtr8kwuW_XNLHcvBp30pOkKTPLq6WYhz_dXJdgXFBIjgbqwqrTvoJNvEXrCBuNnR0twWAvAoey4ltRX7HXtRp-k98uN_zuQAYaR4wiOtn1gX8tOZ1T8XuFRM0lLICI8lIWWRuGyb40BVga0xlSWVz7EJXgDivtQ3pFc6I-cReN6ZDRDuXjtdz6HKKCwDGoK99j0-h5OZIQlvoGwMLXfT859MfJx0VwJmTVVsBXRmEim7zB_2GGJytrjWtF3NF_Vl2r5kXJDcmal_YWjSgbf9Nlo1PVDgV7sul5oIp8FS2UcBGXjJMb_us-0LzLl98uveNvgRRWikRCFCx1tOf-gJ_XDjRuKTUVHCxABVx8u_GcJ2DrmGmq7LP4m7Dnus-UbRNnbP2oryEf_-V9ujFYDp2sjux-4qv7wiVnm0Trmgv_9d6jHFs44w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Sara white",
+									"type": "text"
+								},
+								{
+									"key": "document",
+									"value": "1255522",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "sara@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "secret street 1235 - 458",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/customer/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"customer",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

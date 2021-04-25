@@ -22,12 +22,15 @@ Para instalar el proyecto en un entorno local siga esta guia de instalación pas
 git clone https://github.com/JuanKno/crm-passport.git
 ```
 
--   En la raiz del proyecto ejecute
+    -   En la raiz del proyecto ejecute
 
     ```
     composer install
 
     ```
+
+    -   Configure su conexión a base de datos en el archivo .env
+
 
     -   Asegurese de ejecutar las migraciones
 
@@ -50,8 +53,9 @@ git clone https://github.com/JuanKno/crm-passport.git
 
     ```
 
-    -   por último asegurese de tener una herramienta con la cual hacer las peticiones a la API
-    -   [postman](https://www.postman.com/downloads/)
+    -   por último asegurese de tener una herramienta con la cual hacer las peticiones a la API,
+    en este proyecto se adjunta el recurso de postman que contiene todas las peticiones a la API, una vez descargue postman importelo y comience a testear:
+     [postman](https://www.postman.com/downloads/)
 
 ## Contributing
 
