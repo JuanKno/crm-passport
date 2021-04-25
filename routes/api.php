@@ -23,8 +23,16 @@ Route::group(['namespace' => 'Api'], function () {
         Route::group([
             'middleware' => 'auth:api'
         ], function () {
+            // routes of user authenticated
             Route::get('logout', 'AuthController@logout');
-            Route::get('user', 'AuthController@user');
+            Route::get('profile', 'AuthController@user');
+
+            //routes for User Management
+            Route::get('users', 'UsersController@index');
+            Route::get('user/{user}', 'UsersController@show');
+            Route::post('user', 'UsersController@store');
+            Route::put('user/{user}', 'UsersController@update');
+            Route::delete('user/{user}', 'UsersController@destroy');
         });
     });
 });
