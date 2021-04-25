@@ -15,7 +15,7 @@ class UsersController extends Controller
      */
     public function index()
     {
-        return User::all()->latest();
+        return User::latest()->get();
     }
 
     /**
@@ -45,7 +45,6 @@ class UsersController extends Controller
                 'success' => true,
                 'message' => 'User created successfully'
             ], 200);
-            
         } catch (\Throwable $th) {
             return response()->json([
                 'success' => false,
@@ -110,5 +109,9 @@ class UsersController extends Controller
     public function destroy(User $user)
     {
         $user->delete();
+        return response()->json([
+            'success' => true,
+            'message' => 'User deleted successfully'
+        ]);
     }
 }

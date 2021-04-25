@@ -24,8 +24,8 @@ Route::group(['namespace' => 'Api'], function () {
             'middleware' => 'auth:api'
         ], function () {
             // routes of user authenticated
-            Route::get('logout', 'AuthController@logout');
             Route::get('profile', 'AuthController@user');
+            Route::post('logout', 'AuthController@logout');
 
             //routes for User Management
             Route::get('users', 'UsersController@index');

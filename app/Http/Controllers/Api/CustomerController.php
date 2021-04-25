@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Customer;
@@ -15,7 +15,7 @@ class CustomerController extends Controller
      */
     public function index()
     {
-        return Customer::all()->latest();
+        return Customer::latest()->get();
     }
 
 
@@ -112,5 +112,10 @@ class CustomerController extends Controller
     public function destroy(Customer $customer)
     {
         $customer->delete();
+        
+        return response()->json([
+            'success' => true,
+            'message' => 'Customer deleted successfully'
+        ]);
     }
 }
