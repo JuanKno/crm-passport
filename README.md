@@ -18,15 +18,16 @@ Para instalar el proyecto en un entorno local siga esta guia de instalación pas
 
 ## Guia de instalación
 
-```
-git clone https://github.com/JuanKno/crm-passport.git
-```
+-   inicie clonando el repositorio en un entorno local
+
+    ```
+    git clone https://github.com/JuanKno/crm-passport.git
+    ```
 
     -   En la raiz del proyecto ejecute
 
     ```
     composer install
-
     ```
 
     -   Configure su conexión a base de datos en el archivo .env
@@ -36,21 +37,18 @@ git clone https://github.com/JuanKno/crm-passport.git
 
     ```
     php artisan migrate --seed
-
     ```
 
     -   luego instale los recursos necesarios para que passport funcione adecuadamente
 
     ```
     php artisan passport:install
-
     ```
 
     -   Ejecute el proyecto en un entorno local
 
     ```
     php artisan serve
-
     ```
 
     -   por último asegurese de tener una herramienta con la cual hacer las peticiones a la API,
