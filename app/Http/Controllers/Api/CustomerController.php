@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 
 class CustomerController extends Controller
 {
+
+
     /**
      * Display a listing of the resource.
      *
@@ -112,7 +114,7 @@ class CustomerController extends Controller
     public function destroy(Customer $customer)
     {
         $customer->delete();
-        
+
         return response()->json([
             'success' => true,
             'message' => 'Customer deleted successfully'

@@ -8,6 +8,15 @@ use Illuminate\Http\Request;
 
 class UsersController extends Controller
 {
+
+
+    public function __construct()
+    {
+        $this->middleware('rol');
+    }
+
+
+
     /**
      * Display a listing of the resource.
      *
