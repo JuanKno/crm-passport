@@ -54,6 +54,7 @@ Para instalar el proyecto en un entorno local siga esta guia de instalación pas
     -   por último asegurese de tener una herramienta con la cual hacer las peticiones a la API,
     en este proyecto se adjunta el recurso de postman que contiene todas las peticiones a la API, una vez descargue postman importelo y comience a testear:
      [postman](https://www.postman.com/downloads/)
+     [recurso postman](https://github.com/JuanKno/crm-passport/blob/master/prueba-konecta.postman_collection.json)
 
 ## Contributing
 
