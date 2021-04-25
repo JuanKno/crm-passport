@@ -33,6 +33,13 @@ Route::group(['namespace' => 'Api'], function () {
             Route::post('user', 'UsersController@store');
             Route::put('user/{user}', 'UsersController@update');
             Route::delete('user/{user}', 'UsersController@destroy');
+
+            //routes for customers Management
+            Route::get('customers', 'CustomerController@index');
+            Route::get('customer/{customer}', 'CustomerController@show');
+            Route::post('customer', 'CustomerController@store');
+            Route::put('customer/{customer}', 'CustomerController@update');
+            Route::delete('customer/{customer}', 'CustomerController@destroy');
         });
     });
 });
